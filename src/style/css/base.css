@@ -1,0 +1,78 @@
+@import './index.css';
+@import './iconfont.css';
+
+:root{
+  --color-text:#ccc;
+  --color-high-text:#42bBaa;
+  --color-tint:#42b983;
+  --color-background:#FFFFFF;
+  --font-size:14px;
+  --line-height:1.5;
+  --color-price:#CF4444;
+  --color-warn:#FFB302;
+  --color-help:#E26237;
+  
+}
+
+*,
+*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+}
+
+body{
+  /* 禁止用户选择文件或图片 */
+  height: 100%;
+  color: #333;
+  user-select: none;
+  background:(var(--color-background));
+  color: var(--color-text);
+  width: 100vw;
+  min-width: 1240px;
+  font-family:  'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', 'STHeiti', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei';
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 一行溢出 */
+.ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* 两行溢出 */
+.ellipsis-2{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.active{
+  color: var(--color-high-text);
+}
